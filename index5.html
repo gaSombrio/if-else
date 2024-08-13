@@ -1,0 +1,24 @@
+<script>
+    //entrada
+
+    const prova = Number(prompt(`qual foi sua nota da prova?`));
+    const listas = Number(prompt(`qual foi a nota das listas de exercícios?`));
+    const mimo = Number(prompt(`qual foi sua nota do MIMO?`));
+    const matematicaBasica = Number(prompt(`qual sua nota na lista de matemática básica:?`));
+
+    //processamento
+
+    let media = (prova / 10 * 5) + (listas / 10 * 3) + (mimo / 10 * 1) + (matematicaBasica / 10 * 1);
+    
+    //saída
+
+    if (media >= 6) {
+        alert("parabéns você está aprovado!! :)");
+    } else if (media >= 4) {
+        alert("você está de recuperação! Estude mais :|");
+    } else {
+        alert("você está de recuperação :()");
+    }
+
+    document.write(`E sua média final ficou ${media.toFixed(2).replace(".",",")}!!`);
+</script>

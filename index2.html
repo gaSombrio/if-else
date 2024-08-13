@@ -1,0 +1,13 @@
+<script>
+    const saldo = 500;
+    const valor = Number(prompt(`qual o valor que voçê deseja sacar?`));
+    const saldoFinal = saldo - valor;
+
+    if (valor > saldo) {
+        alert("Saldo insuficiente :(");
+    } else if (valor <= 0) {
+       alert("Não é possível sacar um valor menor que zero :(");
+    } else {
+        alert(`Saque realizado com sucesso!! Vocẽ tem R$${saldoFinal} restantes.`);
+    }
+</script>
