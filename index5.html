@@ -12,12 +12,14 @@
     
     //saída
 
-    if (media >= 6 && media > 11) {
+    if (media >= 6 && media < 11) {
         alert("parabéns você está aprovado!! :)");
-    } else if (media >= 4) {
+    } else if (media >= 4 && media < 6) {
         alert("você está de recuperação! Estude mais :|");
-    } else {
+    } else if (media >= 0) {
         alert("você está de recuperação :()");
+    } else {
+        alert("escreva valores válidos");
     }
 
     document.write(`E sua média final ficou ${media.toFixed(2).replace(".",",")}!!`);
