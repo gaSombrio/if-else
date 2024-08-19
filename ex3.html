@@ -1,3 +1,17 @@
 <script>
-    const idade = Number(prompt(``))
+    const idade = Number(prompt(`qual sua idade?`));
+    const anosTrabalho = Number(prompt(`quantos anos você trabaha na empresa?`));
+
+    let aposentadoria;
+
+    if (idade >= 65 || anosTrabalho >= 30) {
+        aposentadoria = "pode requerer";
+    }  else if (idade >= 60 && anosTrabalho >= 25) {
+        aposentadoria = "pode requerer";
+    } else {
+        aposentadoria = "não pode requerer";
+    }
+    
+    document.write(`você ${aposentadoria} a sua aposentadoria`)
+   
 </script>
